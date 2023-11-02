@@ -13,6 +13,6 @@ bufferline = "always"
 line-number = "relative"
 cursorline = true
 
-[editor.ident-guides]
+[editor.indent-guides]
 render = true
 
