@@ -1,0 +1,18 @@
+theme = "default"
+
+[keys.normal.space.t]
+l = ":theme onelight"
+d = ":theme default"
+
+[keys.insert]
+C-space = "completion"
+
+[editor]
+rulers = [81]
+bufferline = "always"
+line-number = "relative"
+cursorline = true
+
+[editor.ident-guides]
+render = true
+
