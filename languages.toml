@@ -1,1 +1,61 @@
+[language-server.efm]
+command = "efm-langserver"
 
+[[language]]
+name = "typescript"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "javascript"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "tsx"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "jsx"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "css"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "vscode-css-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "markdown"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+]
+
+[[language]]
+name = "html"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "vscode-html-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "json"
+language-servers = [
+  { name = "efm", only-features = [ "diagnostics", "format" ] },
+  { name = "vscode-json-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "yaml"
+language-servers = ["efm"]
