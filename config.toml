@@ -1,8 +1,8 @@
-theme = "default"
+theme = "onedark"
 
 [keys.normal.space.t]
 l = ":theme onelight"
-d = ":theme default"
+d = ":theme onedark"
 
 [keys.insert]
 C-space = "completion"
