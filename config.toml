@@ -1,0 +1,11 @@
+theme = "fleet_dark_transparent"
+
+[editor]
+rulers = [128]
+bufferline = "always"
+cursorline = true
+indent-guides.render = true
+statusline.left = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
+statusline.right = [
+  "diagnostics", "selections", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending", "file-type"
+]
