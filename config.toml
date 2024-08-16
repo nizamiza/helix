@@ -4,6 +4,7 @@ theme = "fleet_dark_transparent"
 rulers = [128]
 bufferline = "always"
 cursorline = true
+cursor-shape.insert = "bar"
 indent-guides.render = true
 statusline.left = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
 statusline.right = [
