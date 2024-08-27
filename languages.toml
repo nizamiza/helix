@@ -3,24 +3,38 @@ biome = { command = "biome", args = ["lsp-proxy"] }
 
 [[language]]
 name = "javascript"
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
+formatter = { command = "prettier", args = ["--parser", "typescript"]}
 auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
 auto-format = true
 
 [[language]]
 name = "tsx"
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
 auto-format = true
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 
 [[language]]
 name = "jsx"
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
 auto-format = true
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 
 [[language]]
 name = "json"
-language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [{ name = "vscode-json-language-server", except-features = [ "format" ] }, "biome"]
+auto-format = true
+
+[[language]]
+name = "html"
+language-servers = [{ name = "vscode-html-language-server", except-features = [ "format" ] }]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"]}
+
+[[language]]
+name = "css"
+language-servers = [ { name = "vscode-css-language-server", except-features = [ "format" ] }]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"]}
