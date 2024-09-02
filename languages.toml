@@ -4,7 +4,6 @@ biome = { command = "biome", args = ["lsp-proxy"] }
 [[language]]
 name = "javascript"
 language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
-formatter = { command = "prettier", args = ["--parser", "typescript"]}
 auto-format = true
 
 [[language]]
