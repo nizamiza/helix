@@ -1,6 +1,8 @@
-theme = "fleet_dark_transparent"
+theme = "flatwhite"
 
 [editor]
+text-width = 128
+completion-timeout = 50
 rulers = [128]
 bufferline = "always"
 cursorline = true
@@ -10,3 +12,6 @@ statusline.left = ["mode", "spinner", "spacer", "version-control", "spacer", "fi
 statusline.right = [
   "diagnostics", "selections", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending", "file-type"
 ]
+
+[keys.normal]
+t = { l = ":theme flatwhite", d = ":theme modus_vivendi_transparent" }
