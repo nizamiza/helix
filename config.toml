@@ -2,8 +2,7 @@ theme = "modus_vivendi_transparent"
 
 [editor]
 text-width = 128
-idle-timeout = 5
-completion-timeout = 5
+completion-timeout = 50
 rulers = [128]
 bufferline = "always"
 cursorline = true
