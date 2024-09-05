@@ -1,4 +1,4 @@
-theme = "flatwhite"
+theme = "modus_operandi_tinted"
 
 [editor]
 text-width = 128
@@ -13,5 +13,6 @@ statusline.right = [
   "diagnostics", "selections", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending", "file-type"
 ]
 
-[keys.normal]
-t = { l = ":theme flatwhite", d = ":theme modus_vivendi_transparent" }
+[keys.normal.space]
+t = { l = ":theme modus_operandi_tinted", d = ":theme modus_vivendi_transparent" }
+i = ":toggle lsp.display-inlay-hints"
