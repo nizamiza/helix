@@ -29,6 +29,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = ["format"] },
   { name = "deno-lsp", except-features = ["format"] },
   "biome",
+  "tailwindcss-ls",
 ]
 
 [[language]]
@@ -39,6 +40,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = ["format"] },
   { name = "deno-lsp", except-features = ["format"] },
   "biome",
+  "tailwindcss-ls",
 ]
 
 [language-server.typescript-language-server]
@@ -88,12 +90,18 @@ language-servers = [
 
 [[language]]
 name = "html"
+language-servers = [
+  { name = "vscode-html-language-server", except-features = ["format"] },
+  "tailwindcss-ls",
+]
 auto-format = true
-language-servers = [{ name = "vscode-html-language-server", except-features = ["format"] }]
 formatter = { command = "prettier", args = ["--parser", "html"] }
 
 [[language]]
 name = "css"
-language-servers = [{ name = "vscode-css-language-server", except-features = ["format"] }]
+language-servers = [
+  { name = "vscode-css-language-server", except-features = ["format"] },
+  "tailwindcss-ls",
+]
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "html"] }
