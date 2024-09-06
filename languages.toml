@@ -3,37 +3,97 @@ biome = { command = "biome", args = ["lsp-proxy"] }
 
 [[language]]
 name = "javascript"
-language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
+shebangs = ["deno", "node"]
 auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "typescript"
-language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
+shebangs = ["deno", "node"]
 auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "tsx"
-language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
+shebangs = ["deno", "node"]
 auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "jsx"
-language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, "biome"]
+shebangs = ["deno", "node"]
 auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp", except-features = ["format"] },
+  "biome",
+]
+
+[language-server.typescript-language-server]
+required-root-patterns = ["package.json", "jsconfig.json", "tsconfig.json"]
+
+[language-server.typescript-language-server.config.typescript]
+inlayHints.includeInlayEnumMemberValueHints = true
+inlayHints.includeInlayFunctionLikeReturnTypeHints = true
+inlayHints.includeInlayFunctionParameterTypeHints = true
+inlayHints.includeInlayParameterNameHints = "all"
+inlayHints.includeInlayParameterNameHintsWhenArgumentMatchesName = true
+inlayHints.includeInlayPropertyDeclarationTypeHints = true
+inlayHints.includeInlayVariableTypeHints = true
+
+[language-server.typescript-language-server.config.javascript]
+inlayHints.includeInlayEnumMemberValueHints = true
+inlayHints.includeInlayFunctionLikeReturnTypeHints = true
+inlayHints.includeInlayFunctionParameterTypeHints = true
+inlayHints.includeInlayParameterNameHints = "all"
+inlayHints.includeInlayParameterNameHintsWhenArgumentMatchesName = true
+inlayHints.includeInlayPropertyDeclarationTypeHints = true
+inlayHints.includeInlayVariableTypeHints = true
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+required-root-patterns = ["deno.*"]
+
+[language-server.deno-lsp.config.deno]
+enable = true
+unstable = true
+suggest.imports.hosts = { "https://deno.land" = true }
+inlayHints.parameterNames.enabled = "all"
+inlayHints.parameterTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+inlayHints.propertyDeclarationTypes.enabled  = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.enumMemberValues.enabled = true
 
 [[language]]
 name = "json"
-language-servers = [{ name = "vscode-json-language-server", except-features = [ "format" ] }, "biome"]
 auto-format = true
+language-servers = [
+  { name = "vscode-json-language-server", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "html"
-language-servers = [{ name = "vscode-html-language-server", except-features = [ "format" ] }]
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "html"]}
+language-servers = [{ name = "vscode-html-language-server", except-features = ["format"] }]
+formatter = { command = "prettier", args = ["--parser", "html"] }
 
 [[language]]
 name = "css"
-language-servers = [ { name = "vscode-css-language-server", except-features = [ "format" ] }]
+language-servers = [{ name = "vscode-css-language-server", except-features = ["format"] }]
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "html"]}
+formatter = { command = "prettier", args = ["--parser", "html"] }
