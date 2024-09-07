@@ -104,4 +104,4 @@ language-servers = [
   "tailwindcss-ls",
 ]
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "html"] }
+formatter = { command = "prettier", args = ["--parser", "css"] }
