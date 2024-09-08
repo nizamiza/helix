@@ -3,6 +3,7 @@ theme = "modus_vivendi_transparent"
 [editor]
 text-width = 128
 completion-timeout = 50
+completion-trigger-len = 1
 rulers = [128]
 bufferline = "always"
 cursorline = true

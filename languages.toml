@@ -67,7 +67,7 @@ inlayHints.includeInlayVariableTypeHints = true
 [language-server.deno-lsp]
 command = "deno"
 args = ["lsp"]
-required-root-patterns = ["deno.*"]
+# required-root-patterns = ["deno.*"]
 
 [language-server.deno-lsp.config.deno]
 enable = true
@@ -105,3 +105,16 @@ language-servers = [
 ]
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "css"] }
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+auto-format = true
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+auto-format = true
