@@ -46,24 +46,6 @@ language-servers = [
 [language-server.typescript-language-server]
 required-root-patterns = ["package.json", "jsconfig.json", "tsconfig.json"]
 
-[language-server.typescript-language-server.config.typescript]
-inlayHints.includeInlayEnumMemberValueHints = true
-inlayHints.includeInlayFunctionLikeReturnTypeHints = true
-inlayHints.includeInlayFunctionParameterTypeHints = true
-inlayHints.includeInlayParameterNameHints = "all"
-inlayHints.includeInlayParameterNameHintsWhenArgumentMatchesName = true
-inlayHints.includeInlayPropertyDeclarationTypeHints = true
-inlayHints.includeInlayVariableTypeHints = true
-
-[language-server.typescript-language-server.config.javascript]
-inlayHints.includeInlayEnumMemberValueHints = true
-inlayHints.includeInlayFunctionLikeReturnTypeHints = true
-inlayHints.includeInlayFunctionParameterTypeHints = true
-inlayHints.includeInlayParameterNameHints = "all"
-inlayHints.includeInlayParameterNameHintsWhenArgumentMatchesName = true
-inlayHints.includeInlayPropertyDeclarationTypeHints = true
-inlayHints.includeInlayVariableTypeHints = true
-
 [language-server.deno-lsp]
 command = "deno"
 args = ["lsp"]
