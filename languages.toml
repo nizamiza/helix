@@ -67,7 +67,7 @@ inlayHints.includeInlayVariableTypeHints = true
 [language-server.deno-lsp]
 command = "deno"
 args = ["lsp"]
-# required-root-patterns = ["deno.*"]
+required-root-patterns = ["deno.*"]
 
 [language-server.deno-lsp.config.deno]
 enable = true
