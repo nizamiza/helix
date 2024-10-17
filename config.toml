@@ -1,19 +1,28 @@
 theme = "modus_vivendi_transparent"
 
 [editor]
-text-width = 128
-completion-timeout = 50
+text-width             = 128
+completion-timeout     = 50
 completion-trigger-len = 1
-rulers = [128]
-bufferline = "always"
-cursorline = true
-cursor-shape.insert = "bar"
-indent-guides.render = true
-statusline.left = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
-statusline.right = [
-  "diagnostics", "selections", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending", "file-type"
+rulers                 = [128]
+bufferline             = "always"
+cursorline             = true
+cursor-shape.insert    = "bar"
+indent-guides.render   = true
+
+[editor.statusline]
+left  = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "position-percentage",
+  "spacer",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
 ]
 
 [keys.normal.space]
-t = { l = ":theme modus_operandi_tinted_transparent", d = ":theme modus_vivendi_transparent" }
 i = ":toggle lsp.display-inlay-hints"
+t = { l = ":theme modus_operandi_tinted_transparent", d = ":theme modus_vivendi_transparent" }
