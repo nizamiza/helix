@@ -1,112 +1,159 @@
+#=======================================================================#
+# JavaScript/TypeScript
+#=======================================================================#
+
 [language-server]
 biome = { command = "biome", args = ["lsp-proxy"] }
 
 [[language]]
-name = "javascript"
-shebangs = ["deno", "node"]
-auto-format = true
+name             = "javascript"
+shebangs         = ["deno", "node"]
+auto-format      = true
 language-servers = [
+  { name = "biome" },
+  { name = "deno-lsp",                   except-features = ["format"] },
   { name = "typescript-language-server", except-features = ["format"] },
-  { name = "deno-lsp", except-features = ["format"] },
-  "biome",
 ]
 
 [[language]]
-name = "typescript"
-shebangs = ["deno", "node"]
-auto-format = true
+name             = "typescript"
+shebangs         = ["deno", "node"]
+auto-format      = true
 language-servers = [
+  { name = "biome" },
+  { name = "deno-lsp",                   except-features = ["format"] },
   { name = "typescript-language-server", except-features = ["format"] },
-  { name = "deno-lsp", except-features = ["format"] },
-  "biome",
 ]
 
 [[language]]
-name = "tsx"
-shebangs = ["deno", "node"]
-auto-format = true
+name             = "tsx"
+shebangs         = ["deno", "node"]
+auto-format      = true
 language-servers = [
+  { name = "biome" },
+  { name = "tailwindcss-ls" },
+  { name = "deno-lsp",                   except-features = ["format"] },
   { name = "typescript-language-server", except-features = ["format"] },
-  { name = "deno-lsp", except-features = ["format"] },
-  "biome",
-  "tailwindcss-ls",
 ]
 
 [[language]]
-name = "jsx"
-shebangs = ["deno", "node"]
-auto-format = true
+name             = "jsx"
+shebangs         = ["deno", "node"]
+auto-format      = true
 language-servers = [
+  { name = "biome" },
+  { name = "tailwindcss-ls" },
+  { name = "deno-lsp",                   except-features = ["format"] },
   { name = "typescript-language-server", except-features = ["format"] },
-  { name = "deno-lsp", except-features = ["format"] },
-  "biome",
-  "tailwindcss-ls",
 ]
 
 [language-server.typescript-language-server]
 required-root-patterns = ["package.json", "jsconfig.json", "tsconfig.json"]
 
+# Deno
 [language-server.deno-lsp]
-command = "deno"
-args = ["lsp"]
+command                = "deno"
+args                   = ["lsp"]
 required-root-patterns = ["deno.*"]
 
 [language-server.deno-lsp.config.deno]
-enable = true
-unstable = true
-suggest.imports.hosts = { "https://deno.land" = true }
-inlayHints.parameterNames.enabled = "all"
-inlayHints.parameterTypes.enabled = true
-inlayHints.variableTypes.enabled = true
-inlayHints.propertyDeclarationTypes.enabled  = true
-inlayHints.functionLikeReturnTypes.enabled = true
-inlayHints.enumMemberValues.enabled = true
+enable                                      = true
+unstable                                    = true
+suggest.imports.hosts                       = { "https://deno.land" = true }
+inlayHints.parameterNames.enabled           = "all"
+inlayHints.parameterTypes.enabled           = true
+inlayHints.variableTypes.enabled            = true
+inlayHints.propertyDeclarationTypes.enabled = true
+inlayHints.functionLikeReturnTypes.enabled  = true
+inlayHints.enumMemberValues.enabled         = true
+
+#=======================================================================#
+# JSON
+#=======================================================================#
 
 [[language]]
-name = "json"
-auto-format = true
+name             = "json"
+auto-format      = true
 language-servers = [
+  { name = "biome" },
   { name = "vscode-json-language-server", except-features = ["format"] },
-  "biome",
 ]
 
-[[language]]
-name = "markdown"
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "markdown"] }
+#=======================================================================#
+# Markdown
+#=======================================================================#
 
 [[language]]
-name = "yaml"
+name        = "markdown"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "yaml"] }
+formatter   = { command = "prettier", args = ["--parser", "markdown"] }
+
+#=======================================================================#
+# YAML
+#=======================================================================#
 
 [[language]]
-name = "html"
+name        = "yaml"
+auto-format = true
+formatter   = { command = "prettier", args = ["--parser", "yaml"] }
+
+#=======================================================================#
+# HTML
+#=======================================================================#
+
+[[language]]
+name             = "html"
+auto-format      = true
+formatter        = { command = "prettier", args = ["--parser", "html"] }
 language-servers = [
+  { name = "tailwindcss-ls" },
   { name = "vscode-html-language-server", except-features = ["format"] },
-  "tailwindcss-ls",
 ]
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "html"] }
+
+#=======================================================================#
+# CSS
+#=======================================================================#
 
 [[language]]
-name = "css"
+name             = "css"
+auto-format      = true
+formatter        = { command = "prettier", args = ["--parser", "css"] }
 language-servers = [
+  { name = "tailwindcss-ls" },
   { name = "vscode-css-language-server", except-features = ["format"] },
-  "tailwindcss-ls",
 ]
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "css"] }
+
+#=======================================================================#
+# Rust
+#=======================================================================#
 
 [[language]]
-name = "rust"
+name             = "rust"
+auto-format      = true
 language-servers = ["rust-analyzer"]
-auto-format = true
 
 [language-server.rust-analyzer.config]
 check.command = "clippy"
 
+#=======================================================================#
+# Lua
+#=======================================================================#
+
 [[language]]
-name = "lua"
+name             = "lua"
+auto-format      = true
 language-servers = ["lua-language-server"]
-auto-format = true
+
+#=======================================================================#
+# PHP
+#=======================================================================#
+
+[[language]]
+name             = "php"
+auto-format      = true
+formatter        = { command = "pretty-php" }
+language-servers = ["phpactor"]
+
+[language-server.phpactor]
+command = "phpactor"
+args    = ["language-server"]
