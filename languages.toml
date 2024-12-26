@@ -54,7 +54,7 @@ required-root-patterns = ["package.json", "jsconfig.json", "tsconfig.json"]
 [language-server.deno-lsp]
 command                = "deno"
 args                   = ["lsp"]
-required-root-patterns = ["deno.*"]
+required-root-patterns = ["deno.json", "deno.jsonc", "deno.lock"]
 
 [language-server.deno-lsp.config.deno]
 enable                                      = true
@@ -103,11 +103,11 @@ formatter   = { command = "prettier", args = ["--parser", "yaml"] }
 
 [[language]]
 name             = "html"
+file-types       = ["html", "svg"]
 auto-format      = true
-formatter        = { command = "prettier", args = ["--parser", "html"] }
 language-servers = [
   { name = "tailwindcss-ls" },
-  { name = "vscode-html-language-server", except-features = ["format"] },
+  { name = "vscode-html-language-server" },
 ]
 
 #=======================================================================#
