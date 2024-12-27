@@ -1,4 +1,4 @@
-theme = "modus_vivendi_transparent"
+theme = "catppuccin_mocha_transparent"
 
 [editor]
 text-width             = 128
@@ -25,4 +25,3 @@ right = [
 
 [keys.normal.space]
 i = ":toggle lsp.display-inlay-hints"
-t = { l = ":theme modus_operandi_tinted_transparent", d = ":theme modus_vivendi_transparent" }
