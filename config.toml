@@ -1,4 +1,4 @@
-theme = "mellow_transparent"
+theme = "catppuccin_mocha_transparent"
 
 [editor]
 text-width             = 128
