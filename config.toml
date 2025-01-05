@@ -1,14 +1,16 @@
 theme = "catppuccin_mocha_transparent"
 
 [editor]
-text-width             = 128
-completion-timeout     = 50
-completion-trigger-len = 1
-rulers                 = [128]
-bufferline             = "always"
-cursorline             = true
-cursor-shape.insert    = "bar"
-indent-guides.render   = true
+text-width              = 128
+completion-timeout      = 50
+completion-trigger-len  = 1
+rulers                  = [128]
+bufferline              = "always"
+cursorline              = true
+cursor-shape.insert     = "bar"
+indent-guides.render    = true
+end-of-line-diagnostics = "hint"
+default-yank-register   = "+"
 
 [editor.statusline]
 left  = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
