@@ -26,4 +26,6 @@ right = [
 ]
 
 [keys.normal.space]
+d = "@\"dd"
 i = ":toggle lsp.display-inlay-hints"
+t = { l = ":theme github_light_high_contrast", d = ":theme catppuccin_mocha_transparent" }
