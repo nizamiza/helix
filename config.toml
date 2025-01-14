@@ -12,6 +12,9 @@ indent-guides.render    = true
 end-of-line-diagnostics = "hint"
 default-yank-register   = "+"
 
+[editor.inline-diagnostics]
+cursor-line = "error"
+
 [editor.statusline]
 left  = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
 right = [
