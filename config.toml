@@ -17,17 +17,8 @@ cursor-line = "error"
 
 [editor.statusline]
 left  = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
-right = [
-  "diagnostics",
-  "selections",
-  "position",
-  "position-percentage",
-  "spacer",
-  "file-encoding",
-  "file-line-ending",
-  "file-type"
-]
+right = ["diagnostics", "selections", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending", "file-type"]
 
 [keys.normal.space]
-i = ":toggle lsp.display-inlay-hints"
-t = { l = ":theme github_light_high_contrast", d = ":theme catppuccin_mocha_transparent" }
+l = { s = ":lsp-stop",                         r= ":lsp-restart",                         i = ":toggle lsp.display-inlay-hints" }
+t = { l = ":theme github_light_high_contrast", d = ":theme catppuccin_mocha_transparent", w = ":toggle-option soft-wrap.enable" }
