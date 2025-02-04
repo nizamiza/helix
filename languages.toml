@@ -8,7 +8,6 @@ biome = { command = "biome", args = ["lsp-proxy"] }
 [[language]]
 name             = "javascript"
 shebangs         = ["deno", "node"]
-auto-format      = true
 language-servers = [
   { name = "biome" },
   { name = "deno-lsp",                   except-features = ["format"] },
@@ -18,7 +17,6 @@ language-servers = [
 [[language]]
 name             = "typescript"
 shebangs         = ["deno", "node"]
-auto-format      = true
 language-servers = [
   { name = "biome" },
   { name = "deno-lsp",                   except-features = ["format"] },
@@ -28,7 +26,6 @@ language-servers = [
 [[language]]
 name             = "tsx"
 shebangs         = ["deno", "node"]
-auto-format      = true
 language-servers = [
   { name = "biome" },
   { name = "tailwindcss-ls" },
@@ -39,7 +36,6 @@ language-servers = [
 [[language]]
 name             = "jsx"
 shebangs         = ["deno", "node"]
-auto-format      = true
 language-servers = [
   { name = "biome" },
   { name = "tailwindcss-ls" },
@@ -73,7 +69,6 @@ inlayHints.enumMemberValues.enabled         = true
 
 [[language]]
 name             = "json"
-auto-format      = true
 language-servers = [
   { name = "biome" },
   { name = "vscode-json-language-server", except-features = ["format"] },
@@ -85,7 +80,6 @@ language-servers = [
 
 [[language]]
 name        = "markdown"
-auto-format = true
 formatter   = { command = "prettier", args = ["--parser", "markdown"] }
 
 #=======================================================================#
@@ -94,7 +88,6 @@ formatter   = { command = "prettier", args = ["--parser", "markdown"] }
 
 [[language]]
 name        = "yaml"
-auto-format = true
 formatter   = { command = "prettier", args = ["--parser", "yaml"] }
 
 #=======================================================================#
@@ -103,8 +96,7 @@ formatter   = { command = "prettier", args = ["--parser", "yaml"] }
 
 [[language]]
 name             = "html"
-file-types       = ["html", "svg"]
-auto-format      = true
+file-types       = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "cshtml"]
 language-servers = [
   { name = "tailwindcss-ls" },
   { name = "vscode-html-language-server" },
@@ -116,7 +108,6 @@ language-servers = [
 
 [[language]]
 name             = "css"
-auto-format      = true
 formatter        = { command = "prettier", args = ["--parser", "css"] }
 language-servers = [
   { name = "tailwindcss-ls" },
@@ -129,7 +120,6 @@ language-servers = [
 
 [[language]]
 name             = "rust"
-auto-format      = true
 language-servers = ["rust-analyzer"]
 
 [language-server.rust-analyzer.config]
@@ -141,7 +131,6 @@ check.command = "clippy"
 
 [[language]]
 name             = "lua"
-auto-format      = true
 language-servers = ["lua-language-server"]
 
 #=======================================================================#
@@ -150,7 +139,6 @@ language-servers = ["lua-language-server"]
 
 [[language]]
 name             = "php"
-auto-format      = true
 formatter        = { command = "pretty-php" }
 language-servers = ["phpactor"]
 

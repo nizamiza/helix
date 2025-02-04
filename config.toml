@@ -1,6 +1,7 @@
 theme = "catppuccin_mocha_transparent"
 
 [editor]
+lsp.enable              = false # by default it's off, but can be toggled -- see keys.normal.space.l
 text-width              = 128
 completion-timeout      = 50
 completion-trigger-len  = 1
@@ -9,16 +10,27 @@ bufferline              = "always"
 cursorline              = true
 cursor-shape.insert     = "bar"
 indent-guides.render    = true
-end-of-line-diagnostics = "hint"
+end-of-line-diagnostics = "disable"
 default-yank-register   = "+"
 
 [editor.inline-diagnostics]
-cursor-line = "error"
+cursor-line = "disable"
 
 [editor.statusline]
 left  = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name", "file-modification-indicator"]
 right = ["diagnostics", "selections", "position", "position-percentage", "spacer", "file-encoding", "file-line-ending", "file-type"]
 
-[keys.normal.space]
-l = { s = ":lsp-stop",                         r= ":lsp-restart",                         i = ":toggle lsp.display-inlay-hints" }
-t = { l = ":theme github_light_high_contrast", d = ":theme catppuccin_mocha_transparent", w = ":toggle-option soft-wrap.enable" }
+# Toggle
+[keys.normal.space.t]
+l = ":theme github_light_high_contrast"
+d = ":theme catppuccin_mocha_transparent"
+w = ":toggle soft-wrap.enable"
+
+# LSP
+[keys.normal.space.l]
+t = ":toggle lsp-enable"
+s = ":lsp-stop"
+r = ":lsp-restart"
+i = ":toggle lsp.display-inlay-hints"
+e = ":toggle inline-diagnostics.cursor-line disable error"
+E = ":toggle end-of-line-diagnostics disable hint"
