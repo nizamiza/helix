@@ -28,7 +28,7 @@ w = ":toggle soft-wrap.enable"
 
 # LSP
 [keys.normal.space.l]
-t = ":toggle lsp-enable"
+t = ":toggle lsp.enable"
 s = ":lsp-stop"
 r = ":lsp-restart"
 i = ":toggle lsp.display-inlay-hints"
