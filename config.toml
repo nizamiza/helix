@@ -1,7 +1,7 @@
-theme = "catppuccin_mocha_transparent"
+theme = "darcula-solid"
 
 [editor]
-lsp.enable              = false # by default it's off, but can be toggled -- see keys.normal.space.l
+lsp.enable              = false
 text-width              = 128
 completion-timeout      = 50
 completion-trigger-len  = 1
@@ -23,7 +23,7 @@ right = ["diagnostics", "selections", "position", "position-percentage", "spacer
 # Toggle
 [keys.normal.space.t]
 l = ":theme github_light_high_contrast"
-d = ":theme catppuccin_mocha_transparent"
+d = ":theme darcula-solid"
 w = ":toggle soft-wrap.enable"
 
 # LSP
