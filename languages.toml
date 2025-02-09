@@ -96,7 +96,7 @@ formatter   = { command = "prettier", args = ["--parser", "yaml"] }
 
 [[language]]
 name             = "html"
-file-types       = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "cshtml"]
+file-types       = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "cshtml", "svg"]
 language-servers = [
   { name = "tailwindcss-ls" },
   { name = "vscode-html-language-server" },
