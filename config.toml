@@ -25,6 +25,7 @@ right = ["diagnostics", "selections", "position", "position-percentage", "spacer
 l = ":theme github_light_high_contrast"
 d = ":theme darcula-solid"
 w = ":toggle soft-wrap.enable"
+W = ":toggle whitespace.render all none"
 
 # LSP
 [keys.normal.space.l]
