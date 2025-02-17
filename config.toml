@@ -1,7 +1,7 @@
 theme = "darcula-solid"
 
 [editor]
-lsp.enable              = false
+lsp.enable              = true
 text-width              = 128
 completion-timeout      = 50
 completion-trigger-len  = 1
