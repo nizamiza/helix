@@ -103,7 +103,7 @@ name             = "css"
 formatter        = { command = "prettier", args = ["--parser", "css"] }
 language-servers = [
   { name = "tailwindcss-ls" },
-  { name = "vscode-css-language-server", -},
+  { name = "vscode-css-language-server" },
 ]
 
 #=======================================================================#
