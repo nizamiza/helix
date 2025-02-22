@@ -2,45 +2,38 @@
 # JavaScript/TypeScript
 #=======================================================================#
 
-[language-server]
-biome = { command = "biome", args = ["lsp-proxy"] }
-
 [[language]]
 name             = "javascript"
 shebangs         = ["deno", "node"]
 language-servers = [
-  { name = "biome" },
-  { name = "deno-lsp",                   except-features = ["format"] },
-  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp" },
+  { name = "typescript-language-server" },
 ]
 
 [[language]]
 name             = "typescript"
 shebangs         = ["deno", "node"]
 language-servers = [
-  { name = "biome" },
-  { name = "deno-lsp",                   except-features = ["format"] },
-  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp" },
+  { name = "typescript-language-server" },
 ]
 
 [[language]]
 name             = "tsx"
 shebangs         = ["deno", "node"]
 language-servers = [
-  { name = "biome" },
   { name = "tailwindcss-ls" },
-  { name = "deno-lsp",                   except-features = ["format"] },
-  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp" },
+  { name = "typescript-language-server" },
 ]
 
 [[language]]
 name             = "jsx"
 shebangs         = ["deno", "node"]
 language-servers = [
-  { name = "biome" },
   { name = "tailwindcss-ls" },
-  { name = "deno-lsp",                   except-features = ["format"] },
-  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "deno-lsp" },
+  { name = "typescript-language-server" },
 ]
 
 [language-server.typescript-language-server]
@@ -70,8 +63,7 @@ inlayHints.enumMemberValues.enabled         = true
 [[language]]
 name             = "json"
 language-servers = [
-  { name = "biome" },
-  { name = "vscode-json-language-server", except-features = ["format"] },
+  { name = "vscode-json-language-server" },
 ]
 
 #=======================================================================#
@@ -111,7 +103,7 @@ name             = "css"
 formatter        = { command = "prettier", args = ["--parser", "css"] }
 language-servers = [
   { name = "tailwindcss-ls" },
-  { name = "vscode-css-language-server", except-features = ["format"] },
+  { name = "vscode-css-language-server", -},
 ]
 
 #=======================================================================#
