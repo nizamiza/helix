@@ -4,6 +4,7 @@
 
 [[language]]
 name             = "javascript"
+auto-format      = false
 shebangs         = ["deno", "node"]
 language-servers = [
   { name = "deno-lsp" },
@@ -12,6 +13,7 @@ language-servers = [
 
 [[language]]
 name             = "typescript"
+auto-format      = false
 shebangs         = ["deno", "node"]
 language-servers = [
   { name = "deno-lsp" },
@@ -20,6 +22,7 @@ language-servers = [
 
 [[language]]
 name             = "tsx"
+auto-format      = false
 shebangs         = ["deno", "node"]
 language-servers = [
   { name = "tailwindcss-ls" },
@@ -29,6 +32,7 @@ language-servers = [
 
 [[language]]
 name             = "jsx"
+auto-format      = false
 shebangs         = ["deno", "node"]
 language-servers = [
   { name = "tailwindcss-ls" },
@@ -62,6 +66,7 @@ inlayHints.enumMemberValues.enabled         = true
 
 [[language]]
 name             = "json"
+auto-format      = false
 language-servers = [
   { name = "vscode-json-language-server" },
 ]
@@ -72,6 +77,7 @@ language-servers = [
 
 [[language]]
 name        = "markdown"
+auto-format = false
 formatter   = { command = "prettier", args = ["--parser", "markdown"] }
 
 #=======================================================================#
@@ -80,6 +86,7 @@ formatter   = { command = "prettier", args = ["--parser", "markdown"] }
 
 [[language]]
 name        = "yaml"
+auto-format = false
 formatter   = { command = "prettier", args = ["--parser", "yaml"] }
 
 #=======================================================================#
@@ -88,6 +95,7 @@ formatter   = { command = "prettier", args = ["--parser", "yaml"] }
 
 [[language]]
 name             = "html"
+auto-format      = false
 file-types       = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "cshtml", "svg"]
 language-servers = [
   { name = "tailwindcss-ls" },
@@ -100,6 +108,7 @@ language-servers = [
 
 [[language]]
 name             = "css"
+auto-format      = false
 formatter        = { command = "prettier", args = ["--parser", "css"] }
 language-servers = [
   { name = "tailwindcss-ls" },
