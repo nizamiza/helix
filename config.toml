@@ -29,6 +29,7 @@ W = ":toggle whitespace.render all none"
 
 # LSP
 [keys.normal.space.l]
+f = ":format"
 t = ":toggle lsp.enable"
 s = ":lsp-stop"
 r = ":lsp-restart"
