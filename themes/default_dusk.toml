@@ -1,9 +1,13 @@
 inherits = "default"
 
-"ui.selection.primary" = { bg = "#325469" }
-"ui.cursor.match" = { fg = "#1a1e23", bg = "#b6f6f0" }
-
 comment = { fg = "sirocco", modifiers = ["italic"] }
+
+"ui.selection.primary" = { bg = "#325469" }
+"ui.cursor.match" = { fg = "#1a1e23", bg = "delta" }
+
+"diff.minus" = "#a9291a"
+"diff.plus" = "#377937"
+"diff.delta" = "delta"
 
 [palette]
 lilac = "#70ebde"
@@ -12,3 +16,4 @@ comet = "#5a6269"
 bossanova = "#2d3236"
 midnight = "#202429"
 revolver = "#1a1e23"
+delta = "#59817d"
