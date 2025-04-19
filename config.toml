@@ -1,4 +1,4 @@
-theme = "darcula-solid"
+theme = "default_dusk"
 
 [editor]
 lsp.enable              = true
