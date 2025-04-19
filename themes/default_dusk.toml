@@ -2,11 +2,15 @@ inherits = "default"
 
 comment = { fg = "sirocco", modifiers = ["italic"] }
 
-"ui.selection.primary" = { bg = "#325469" }
-"ui.cursor.match" = { fg = "#1a1e23", bg = "delta" }
+"ui.selection" = { bg = "select" }
+"ui.selection.primary" = { bg = "select" }
+"ui.cursor.match" = { fg = "revolver", bg = "delta" }
+"ui.help" = { bg = "delta", fg = "revolver", modifiers = ["bold"] }
+"ui.highlight.frameline" = { bg = "frame" }
+"ui.debug" = { fg = "debug" }
 
-"diff.minus" = "#a9291a"
-"diff.plus" = "#377937"
+"diff.minus" = "danger"
+"diff.plus" = "success"
 "diff.delta" = "delta"
 
 [palette]
@@ -16,4 +20,11 @@ comet = "#5a6269"
 bossanova = "#2d3236"
 midnight = "#202429"
 revolver = "#1a1e23"
+
+select = "#325469"
+debug = "#445463"
+frame = "#333f49"
+
+danger = "#a9291a"
+success = "#377937"
 delta = "#59817d"
