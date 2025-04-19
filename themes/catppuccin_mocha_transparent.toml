@@ -1,5 +1,0 @@
-inherits = "catppuccin_mocha"
-
-"ui.background" = {}
-
-"diagnostic.unnecessary" = { modifiers = ["dim"] }
