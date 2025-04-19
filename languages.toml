@@ -132,7 +132,7 @@ check.command = "clippy"
 
 [[language]]
 name = "c"
-indent = { tab-width = 4, unit = "  " }
+indent = { tab-width = 4, unit = " " }
 
 #=======================================================================#
 # Lua
