@@ -1,6 +1,9 @@
 inherits = "default"
 
-comment = { fg = "sirocco", modifiers = ["italic"] }
+variable = "var"
+"variable.parameter" = { fg = "var" }
+
+comment = { fg = "lavender", modifiers = ["italic"] }
 
 "ui.selection" = { bg = "select" }
 "ui.selection.primary" = { bg = "select" }
@@ -20,6 +23,7 @@ comet = "#5a6269"
 bossanova = "#2d3236"
 midnight = "#202429"
 revolver = "#1a1e23"
+var = "#b6f6f0"
 
 select = "#325469"
 debug = "#445463"
