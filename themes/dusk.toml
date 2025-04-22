@@ -1,0 +1,124 @@
+# The default theme was used as the base.
+# Inspired by "Dusk" high contrast theme of Windows.
+
+"attribute"   = "crayola"
+"operator"    = "crayola"
+"special"     = "rajah"
+"constructor" = "pale_blue"
+"namespace"   = "crayola"
+"tag"         = "chestnut"
+"string"      = "silver"
+"label"       = "rajah"
+"tabstop"     = { modifiers = ["italic"], bg = "gunmetal" }
+
+"keyword"           = "chestnut"
+"keyword.directive" = "crayola"
+
+"punctuation"           = "turquoise"
+"punctuation.delimiter" = "turquoise"
+
+"variable"              = "pale_blue"
+"variable.builtin"      = "pale_green"
+"variable.parameter"    = { fg = "pale_blue" }
+"variable.other.member" = "white"
+
+"type"         = "white"
+"type.builtin" = "white"
+
+"function"         = "white"
+"function.macro"   = "crayola"
+"function.builtin" = "white"
+
+"constant"                  = "white"
+"constant.builtin"          = "white"
+"constant.numeric"          = "goldenrod"
+"constant.character.escape" = "rajah"
+
+"comment" = { fg = "turquoise", modifiers = ["italic"] }
+
+"markup.heading"       = "crayola"
+"markup.bold"          = { modifiers = ["bold"] }
+"markup.italic"        = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url"      = { modifiers = ["underlined"], fg = "silver" }
+"markup.link.white"    = "chestnut"
+"markup.raw"           = "chestnut"
+
+"ui.background"           = { bg = "dark_gunmetal" }
+"ui.background.separator" = { fg = "black_coral" }
+
+"ui.linenr"          = { fg = "black_coral" }
+"ui.linenr.selected" = { fg = "crayola" }
+
+"ui.statusline"          = { fg = "turquoise",   bg = "jungle_green" }
+"ui.statusline.inactive" = { fg = "wintergreen", bg = "jungle_green" }
+
+"ui.popup"  = { bg = "jungle_green" }
+"ui.window" = { fg = "gunmetal" }
+"ui.help"   = { bg = "wintergreen", fg = "jungle_green", modifiers = ["bold"] }
+
+"ui.debug"            = { fg = "slategray" }
+"ui.debug.breakpoint" = { fg = "apricot" }
+
+"ui.text"           = { fg  = "turquoise" }
+"ui.text.focus"     = { fg  = "white" }
+"ui.text.inactive"  = "khaki"
+"ui.text.directory" = { fg = "crayola" }
+
+"ui.virtual"              = { fg = "black_coral" }
+"ui.virtual.ruler"        = { bg = "gunmetal" }
+"ui.virtual.jump-label"   = { fg = "apricot", modifiers = ["bold"] }
+"ui.virtual.indent-guide" = { fg = "black_coral" }
+
+"ui.selection"         = { bg = "police_blue" }
+"ui.selection.primary" = { bg = "police_blue" }
+
+"ui.cursor"                = { modifiers = ["reversed"] }
+"ui.cursor.select"         = { bg = "wintergreen" }
+"ui.cursor.insert"         = { bg = "white" }
+"ui.cursor.primary.select" = { bg = "wintergreen" }
+"ui.cursor.primary.insert" = { bg = "white" }
+"ui.cursor.match"          = { fg = "jungle_green", bg = "wintergreen" }
+"ui.cursorline.primary"    = { bg = "gunmetal" }
+
+"ui.highlight"           = { bg = "gunmetal" }
+"ui.highlight.frameline" = { bg = "charcoal" }
+
+"ui.menu"          = { fg = "turquoise",    bg = "jungle_green" }
+"ui.menu.selected" = { fg = "jungle_green", bg = "white" }
+"ui.menu.scroll"   = { fg = "turquoise",    bg = "black_coral" }
+
+"diagnostic.hint"        = { underline = { color = "silver",      style = "curl" } }
+"diagnostic.info"        = { underline = { color = "wintergreen", style = "curl" } }
+"diagnostic.warning"     = { underline = { color = "lightning",   style = "curl" } }
+"diagnostic.error"       = { underline = { color = "apricot",     style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
+
+"diff.minus"       = "firebrick"
+"diff.plus"        = "laurel"
+"diff.wintergreen" = "wintergreen"
+
+[palette]
+white         = "#ffffff"
+crayola       = "#70ebde"
+turquoise     = "#51cbbe"
+black_coral   = "#5a6269"
+gunmetal      = "#2d3236"
+dark_gunmetal = "#202429"
+jungle_green  = "#1a1e23"
+pale_blue     = "#b6f6f0"
+silver        = "#cccccc"
+khaki         = "#b8c86a"
+pale_green    = "#a2ee81"
+chestnut      = "#e6b7a7"
+goldenrod     = "#f1e4a2"
+rajah         = "#f0ba5c"
+police_blue   = "#325469"
+slategray     = "#445463"
+charcoal      = "#333f49"
+apricot       = "#f47868"
+lightning     = "#ffcd1c"
+firebrick     = "#a9291a"
+laurel        = "#377937"
+wintergreen   = "#59817d"

@@ -1,4 +1,4 @@
-theme = "default_dusk"
+theme = "dusk"
 
 [editor]
 lsp.enable              = true
