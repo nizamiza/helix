@@ -11,6 +11,8 @@ comment = { fg = "lavender", modifiers = ["italic"] }
 "ui.help" = { bg = "delta", fg = "revolver", modifiers = ["bold"] }
 "ui.highlight.frameline" = { bg = "frame" }
 "ui.debug" = { fg = "debug" }
+"ui.statusline" = { fg = "lavender", bg = "revolver" }
+"ui.statusline.inactive" = { fg = "delta", bg = "revolver" }
 
 "diff.minus" = "danger"
 "diff.plus" = "success"
