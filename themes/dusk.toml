@@ -17,24 +17,24 @@
 "punctuation"           = "turquoise"
 "punctuation.delimiter" = "turquoise"
 
-"variable"              = "pale_blue"
+"variable"              = "white"
 "variable.builtin"      = "pale_green"
-"variable.parameter"    = { fg = "pale_blue" }
+"variable.parameter"    = { fg = "white" }
 "variable.other.member" = "white"
 
 "type"         = "white"
-"type.builtin" = "white"
+"type.builtin" = "chestnut"
 
 "function"         = "white"
 "function.macro"   = "crayola"
 "function.builtin" = "white"
 
-"constant"                  = "white"
-"constant.builtin"          = "white"
+"constant"                  = "rajah"
+"constant.builtin"          = "goldenrod"
 "constant.numeric"          = "goldenrod"
 "constant.character.escape" = "rajah"
 
-"comment" = { fg = "turquoise", modifiers = ["italic"] }
+"comment" = { fg = "silver", modifiers = ["italic"] }
 
 "markup.heading"       = "crayola"
 "markup.bold"          = { modifiers = ["bold"] }
