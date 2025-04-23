@@ -34,7 +34,7 @@
 "constant.numeric"          = "goldenrod"
 "constant.character.escape" = "rajah"
 
-"comment" = { fg = "silver", modifiers = ["italic"] }
+"comment" = { fg = "turquoise", modifiers = ["italic"] }
 
 "markup.heading"       = "crayola"
 "markup.bold"          = { modifiers = ["bold"] }
