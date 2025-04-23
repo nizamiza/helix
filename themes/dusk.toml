@@ -95,9 +95,9 @@
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
 
-"diff.minus"       = "firebrick"
-"diff.plus"        = "laurel"
-"diff.wintergreen" = "wintergreen"
+"diff.minus" = "firebrick"
+"diff.plus"  = "laurel"
+"diff.delta" = "wintergreen"
 
 [palette]
 white         = "#ffffff"
